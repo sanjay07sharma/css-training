@@ -23,3 +23,13 @@
     background-color: aqua;
     border: 1px solid black;
 }
+
+
+/* to center the contents without using flex*/
+.box {
+   width: 200px;
+    height: 200px;
+    display: block;
+    justify-content: center;
+    align-content: centre;
+}
