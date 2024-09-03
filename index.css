@@ -27,9 +27,13 @@
 
 /* to center the contents without using flex*/
 .box {
-   width: 200px;
+/*    width: 200px;
     height: 200px;
     display: block;
     justify-content: center;
-    align-content: centre;
+    align-content: centre; */
+    width: 200px;
+    height: 200px;
+    background-color: #f0f0f0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
