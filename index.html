@@ -7,36 +7,34 @@
     <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
-    <div class="search-container">
-        <input type="text" class="search-input" placeholder="Search...">
-        <button class="search-button">🔍</button>
+    <div id="contentArea" class="content-area desktop">
+        <div class="view-content">Desktop View</div>
     </div>
+    <button id="toggleBtn" class="toggle-btn">
+        <span class="icon">📱</span>
+        Switch to Mobile
+    </button>
 
     <script>
-        const searchContainer = document.querySelector('.search-container');
-        const searchButton = document.querySelector('.search-button');
-        const searchInput = document.querySelector('.search-input');
+        const contentArea = document.getElementById('contentArea');
+        const toggleBtn = document.getElementById('toggleBtn');
+        let isDesktop = true;
 
-        searchButton.addEventListener('click', () => {
-            searchContainer.classList.toggle('active');
-            if (searchContainer.classList.contains('active')) {
-                searchInput.focus();
+        toggleBtn.addEventListener('click', () => {
+            isDesktop = !isDesktop;
+            contentArea.className = isDesktop ? 'content-area desktop' : 'content-area mobile';
+            contentArea.querySelector('.view-content').textContent = isDesktop ? 'Desktop View' : 'Mobile View';
+            
+            if (isDesktop) {
+                toggleBtn.innerHTML = `
+                    <span class="icon">📱</span>
+                    Switch to Mobile
+                `;
             } else {
-                searchInput.value = '';
-            }
-        });
-
-        document.addEventListener('click', (event) => {
-            if (!searchContainer.contains(event.target) && searchContainer.classList.contains('active')) {
-                searchContainer.classList.remove('active');
-                searchInput.value = '';
-            }
-        });
-
-        searchInput.addEventListener('keypress', (event) => {
-            if (event.key === 'Enter') {
-                // Perform search action here
-                console.log('Searching for:', searchInput.value);
+                toggleBtn.innerHTML = `
+                    <span class="icon">🖥️</span>
+                    Switch to Desktop
+                `;
             }
         });
     </script>
