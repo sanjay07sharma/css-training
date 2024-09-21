@@ -7,34 +7,31 @@
     <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
-    <div id="contentArea" class="content-area desktop">
-        <div class="view-content">Desktop View</div>
+    <div class="dropdown" id="myDropdown">
+        <button class="dropbtn">
+            <span>Explore Options</span>
+            <i class="arrow"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="#">Innovative Ideas</a>
+            <a href="#">Creative Designs</a>
+            <a href="#">Modern Solutions</a>
+        </div>
     </div>
-    <button id="toggleBtn" class="toggle-btn">
-        <span class="icon">📱</span>
-        Switch to Mobile
-    </button>
 
     <script>
-        const contentArea = document.getElementById('contentArea');
-        const toggleBtn = document.getElementById('toggleBtn');
-        let isDesktop = true;
+        const dropdown = document.getElementById('myDropdown');
+        const dropbtn = dropdown.querySelector('.dropbtn');
+        const arrow = dropdown.querySelector('.arrow');
 
-        toggleBtn.addEventListener('click', () => {
-            isDesktop = !isDesktop;
-            contentArea.className = isDesktop ? 'content-area desktop' : 'content-area mobile';
-            contentArea.querySelector('.view-content').textContent = isDesktop ? 'Desktop View' : 'Mobile View';
-            
-            if (isDesktop) {
-                toggleBtn.innerHTML = `
-                    <span class="icon">📱</span>
-                    Switch to Mobile
-                `;
-            } else {
-                toggleBtn.innerHTML = `
-                    <span class="icon">🖥️</span>
-                    Switch to Desktop
-                `;
+        dropbtn.addEventListener('click', function() {
+            dropdown.classList.toggle('active');
+            arrow.classList.toggle('up');
+        });
+        window.addEventListener('click', function(event) {
+            if (!dropdown.contains(event.target)) {
+                dropdown.classList.remove('active');
+                arrow.classList.remove('up');
             }
         });
     </script>
