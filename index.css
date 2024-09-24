@@ -1,69 +1,24 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #222;
+    transition: background-color 0.5s ease;
+}
 
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f0f0f0;
-            font-family: Arial, sans-serif;
-        }
-        .container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 40px;
-        }
-        .loader {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            position: relative;
-        }
-        .loader-label {
-            text-align: center;
-            margin-top: 10px;
-            color: #333;
-            font-size: 14px;
-        }
+.bulb {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 50px rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: background-color 0.5s ease, box-shadow 0.5s ease;
+}
 
-        /* Spinner */
-        .spinner {
-            border: 3px solid rgba(0, 0, 0, 0.1);
-            border-top: 3px solid #333;
-            animation: spin 1s linear infinite;
-        }
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-
-        /* Pulsing Dot */
-        .pulsing-dot {
-            background-color: #333;
-            animation: pulse 1.5s ease-in-out infinite;
-        }
-        @keyframes pulse {
-            0%, 100% { transform: scale(0.5); opacity: 0.5; }
-            50% { transform: scale(1); opacity: 1; }
-        }
-
-        /* Hourglass */
-        .hourglass {
-            border: 3px solid #333;
-            animation: hourglass 2s ease-in-out infinite;
-        }
-        @keyframes hourglass {
-            0%, 100% { transform: rotate(0deg); }
-            50% { transform: rotate(180deg); }
-        }
-
-        /* Ripple */
-        .ripple {
-            border: 3px solid #333;
-            animation: ripple 1.5s ease-out infinite;
-        }
-        @keyframes ripple {
-            0% { transform: scale(0.1); opacity: 1; }
-            100% { transform: scale(1); opacity: 0; }
-        }
+.bulb.on {
+    background-color: #ffff00;
+    box-shadow: 0 0 100px rgba(255, 255, 0, 0.8);
+}

@@ -1,29 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="index.css">
-    <title>Elegant Loading Icons</title>
+  <title>Bulb On/Off</title>
+  <style>
+  </style>
 </head>
 <body>
-    <div class="container">
-        <div>
-            <div class="loader spinner"></div>
-            <div class="loader-label">Spinner</div>
-        </div>
-        <div>
-            <div class="loader pulsing-dot"></div>
-            <div class="loader-label">Pulsing Dot</div>
-        </div>
-        <div>
-            <div class="loader hourglass"></div>
-            <div class="loader-label">Hourglass</div>
-        </div>
-        <div>
-            <div class="loader ripple"></div>
-            <div class="loader-label">Ripple</div>
-        </div>
-    </div>
-</body>
+  <div class="bulb"></div>
+
+  <script>
+    const bulb = document.querySelector('.bulb');
+
+    bulb.addEventListener('click', () => {
+      bulb.classList.toggle('on');
+      document.body.style.backgroundColor = bulb.classList.contains('on') ? '#333' : '#222';
+    });
+  </script>
 </html>
