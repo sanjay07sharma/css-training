@@ -1,22 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="index.css">
-  <title>Bulb On/Off</title>
-  <style>
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Elegant Login Form</title>
 </head>
 <body>
-  <div class="bulb"></div>
-
-  <script>
-    const bulb = document.querySelector('.bulb');
-
-    bulb.addEventListener('click', () => {
-      bulb.classList.toggle('on');
-      document.body.style.backgroundColor = bulb.classList.contains('on') ? '#333' : '#222';
-    });
-  </script>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form>
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">Login</button>
+            <p class="signup-text">Don't have an account? <a href="#">Sign up</a></p>
+        </form>
+    </div>
+</body>
 </html>
