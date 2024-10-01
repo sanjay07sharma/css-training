@@ -1,83 +1,38 @@
-/* styles.css */
-body {
+/* Styling for the alert box */
+.alert-box {
+    background-color: #fff3cd;
+    color: #856404;
+    padding: 15px 20px;
+    border-left: 5px solid #ffc107;
+    border-radius: 4px;
     display: flex;
-    justify-content: center;
     align-items: center;
-    height: 100vh;
-    background-color: #f3f4f6;
-    margin: 0;
+    position: relative;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 20px auto;
     font-family: Arial, sans-serif;
-}
-
-.login-container {
-    background-color: #fff;
-    padding: 30px 40px;
-    border-radius: 10px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 400px;
-    text-align: center;
-}
-
-.login-container h2 {
-    margin-bottom: 20px;
-    color: #333;
-}
-
-.input-group {
-    margin-bottom: 20px;
-    text-align: left;
-}
-
-.input-group label {
-    display: block;
-    font-size: 14px;
-    color: #777;
-    margin-bottom: 5px;
-}
-
-.input-group input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
     font-size: 16px;
-    transition: border-color 0.3s;
 }
 
-.input-group input:focus {
-    outline: none;
-    border-color: #007bff;
+/* Styling for the warning icon */
+.alert-icon {
+    font-size: 24px;
+    margin-right: 10px;
 }
 
-button {
-    width: 100%;
-    padding: 12px;
-    border: none;
-    background-color: #007bff;
-    color: white;
-    border-radius: 5px;
-    font-size: 16px;
+/* Styling for the alert message */
+.alert-message {
+    flex: 1;
+}
+
+/* Styling for the close button */
+.close-btn {
+    font-size: 20px;
+    font-weight: bold;
     cursor: pointer;
-    transition: background-color 0.3s;
-    margin-left: 15px;
-}
-
-button:hover {
-    background-color: #0056b3;
-}
-
-.signup-text {
-    margin-top: 15px;
-    color: #777;
-}
-
-.signup-text a {
-    color: #007bff;
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-.signup-text a:hover {
-    color: #0056b3;
+    color: #856404;
+    position: absolute;
+    top: 10px;
+    right: 15px;
 }

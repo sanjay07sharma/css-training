@@ -7,20 +7,10 @@
     <title>Elegant Login Form</title>
 </head>
 <body>
-    <div class="login-container">
-        <h2>Login</h2>
-        <form>
-            <div class="input-group">
-                <label for="username">Username</label>
-                <input type="text" id="username" name="username" required>
-            </div>
-            <div class="input-group">
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password" required>
-            </div>
-            <button type="submit">Login</button>
-            <p class="signup-text">Don't have an account? <a href="#">Sign up</a></p>
-        </form>
-    </div>
+    <div class="alert-box">
+        <span class="alert-icon">&#9888;</span>
+        <span class="alert-message">This is a warning alert. Please proceed with caution!</span>
+        <span class="close-btn" onclick="this.parentElement.style.display='none';">&times;</span>
+    </div> 
 </body>
 </html>
