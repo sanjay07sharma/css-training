@@ -1,12 +1,34 @@
 body {
-    margin: 0;
-    width: 100vw;
+    background: #62374e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
-    background-color: #603434;
 }
 
-.container {
-    width: 50vw;
-    height: 70vh;
-    background: #b5e0ba;
+.box {
+    width: 50px;
+    height: 50px;
+    background: #dd6b4d;
+    position: absolute;
+}
+
+.box:nth-child(1) {
+    top: 50px;
+    left: 50px;
+}
+
+.box:nth-child(2) {
+    top: 50px;
+    right: 50px;
+}
+
+.box:nth-child(3) {
+    bottom: 50px;
+    left: 50px;
+}
+
+.box:nth-child(4) {
+    bottom: 50px;
+    right: 50px;
 }
