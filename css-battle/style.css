@@ -1,41 +1,38 @@
 body {
-  background: #62306D;
-  margin: 0;
+  background: #191210;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
 }
-.rectangles {
-  position: fixed;
-  bottom: 0;
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  transform: rotate(180deg);
+div {
+  border: 20px solid #ECA03D;
+  border-radius: 50%;
 }
-.r1c1, .r2c2, .r3c3 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.rect {
-  width: 100px;
-  background: #F7EC7D;
-}
-.r1 { height: 100px; }
-.r2 { height: 200px; }
-.r3 { height: 100px; }
-.circle {
+.center_cir {
   width: 100px;
   height: 100px;
-  background: #AA445F;
-  border-radius: 50%;
-  margin-top: -50px;
+  border: none;
+  box-shadow: 0px 0px 0px 20px #ECA03D;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.c2 { background: #E38F66; }
-.inner-circle {
+.dot {
+  width: 50px;
+  height: 50px;
+  background:#84271C;
+  border: none;
+}
+.lsc, .rsc {
   width: 60px;
   height: 60px;
-  border-radius: 50%;
-  margin-top: -80px;
+  border-left-color: transparent;
+  border-top-color: transparent;
 }
-.ic1, .ic3 { background: #E38F66; }
-.ic2 { background: #AA445F; }
+.lsc {
+  transform: rotate(45deg);
+}
+.rsc {
+  transform: rotate(-135deg);
+}
