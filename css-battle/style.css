@@ -3,31 +3,64 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #09042A;
   margin: 0;
+  background-color: #09042A;
 }
 
-.circle {
-  width: 150px;
-  height: 150px;
+.dumbbell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.weight {
+  width: 80px;
+  height: 80px;
+  background-color: #E78481;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.small-circle {
+  width: 60px;
+  height: 60px;
+  background-color: #09042A;
   border-radius: 50%;
   position: absolute;
 }
 
-.circle1 {
-  background-color: #7B3F61;
-  left: 18%;
+.bar {
+  width: 60px;
+  height: 40px;
+  background-color :#E78481;
+  position: relative;
 }
 
-.circle2 {
-  background-color: #E78481;
-  left: 44%;
+.circle-on-bar {
+  width: 60px;
+  height: 60px;
+  border: 10px solid;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background:#F5BB9C
 }
-.oval {
-  width: 45px;
-  height: 120px;
-  background-color: #09042A;
-  border-radius: 170%;
-  z-index:1;
-  margin-left:-10
+
+.circle-on-bar.top {
+  top: -70px;
+  border-color:#09042A;
+  background-color:#F5BB9C;
+}
+
+.circle-on-bar.bottom {
+  bottom: -70px;
+  border-color:#09042A;
+  background-color:#F5BB9C;
+}
+
+.left, .right {
+  margin: -10px;
 }
