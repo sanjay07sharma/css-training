@@ -1,18 +1,29 @@
-body {
-  display: grid;
-  grid-template-columns: repeat(4, auto);
-  grid-template-rows: repeat(3, auto);
-  gap: 10px;
+body{
   height:100vh;
-  background:#5C434C;
-  padding:2px
+  background:#F0F0F0;
+  justify-items:center;
+  align-items:center;
+  display:flex;
+  margin-top:-1
 }
-.ab, .ba {
-  width: 80px;
-  height: 80px;
-  border-start-start-radius:100px;
-  background-color: #F09462;
+.circle {
+width: 195px;
+height: 80px;
+background-color: #E05947;
+border-radius: 50%;
+z-index:1;
+position:absolute;
+  margin-left:94px;
 }
-.ba {
-  background-color:#F5D6B4;
+.capsule {
+height:170px;
+width:40px;
+border-radius:99px;
+background-color:#F0F0F0;
+border: 15px solid;
+z-index:2;
+margin-left:155px;    
+}
+.capsule.top {
+border-color: #E05947;
 }
