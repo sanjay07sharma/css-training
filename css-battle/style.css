@@ -1,31 +1,48 @@
 body {
-  background-color: #1A202C;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
 }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
-}
+.scene {
+      width: 200px;
+      height: 200px;
+      perspective: 600px;
+  }
 
-.drum-pad {
-  width: 100px;
-  height: 100px;
-  background-color: #4A5568;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-size: 1.5rem;
-  cursor: pointer;
-  transition: background-color 0.2s;
-}
+  .cube {
+      position: relative;
+      width: 100px;
+      height: 100px;
+      transform-style: preserve-3d; 
+      transform: rotateX(-20deg) rotateY(30deg);
+      animation: rotate 6s infinite linear; /* gives animation */
+  }
 
-.drum-pad:hover {
-  background-color: #2D3748;
-}
+  .cube-face {
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .front {
+      transform: rotateY(0deg) translateZ(50px);
+      background-color: #3498db;
+  }
+  .right {
+      transform: rotateY(90deg) translateZ(50px);
+      background-color: #e74c3c;
+  }
+  .top {
+      transform: rotateX(90deg) translateZ(50px);
+      background-color: #f39c12;
+  }
+
+  @keyframes rotate {
+      from { transform: rotateX(-20deg) rotateY(30deg); }
+      to { transform: rotateX(-20deg) rotateY(390deg); }
+  }
