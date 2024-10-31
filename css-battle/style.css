@@ -1,26 +1,67 @@
 body {
-  display:flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+  }
+  #top {
+  width:100%;
+  height:100px;
+  background:#F19E4B;
+  }
+  #bottom {
+  width:100%;
+  height:110px;
+  background:#3F8627;
+  margin-top:10px
+  }
+  #mid{
   justify-content:center;
   align-items:center;
-  background:#EEB850;
-  height: 100vh;
-}
-#rect {
-  width: 320px;
-  height: 220px;
-  background:#AA445F;
-  position:absolute;
-  z-index:1;
-}
-#cap1, #cap2 {
-  width:140px;
-  height:90px;
-  position:absolute;
-  z-index:2;
-  background:#EEB850;
-  border-radius:40px;
-  margin-top:-230px;
-}
-#cap2 {
-  margin-top:230px;
-}
+  display:flex;
+  margin-top:11px
+  }
+  .wheel {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #ddd;
+  border: 10px solid #333;
+  }
+  .spoke {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2px;
+  height: 30px;
+  background: #00007B;
+  transform-origin: bottom;
+  margin-top:-30px;
+  }
+  
+  .wheel .spoke:nth-child(1) { transform: rotate(0deg); }
+  .wheel .spoke:nth-child(2) { transform: rotate(15deg); }
+  .wheel .spoke:nth-child(3) { transform: rotate(30deg); }
+  .wheel .spoke:nth-child(4) { transform: rotate(45deg); }
+  .wheel .spoke:nth-child(5) { transform: rotate(60deg); }
+  .wheel .spoke:nth-child(6) { transform: rotate(75deg); }
+  .wheel .spoke:nth-child(7) { transform: rotate(90deg); }
+  .wheel .spoke:nth-child(8) { transform: rotate(105deg); }
+  .wheel .spoke:nth-child(9) { transform: rotate(120deg); }
+  .wheel .spoke:nth-child(10) { transform: rotate(135deg); }
+  .wheel .spoke:nth-child(11) { transform: rotate(150deg); }
+  .wheel .spoke:nth-child(12) { transform: rotate(165deg); }
+  .wheel .spoke:nth-child(13) { transform: rotate(180deg); }
+  .wheel .spoke:nth-child(14) { transform: rotate(195deg); }
+  .wheel .spoke:nth-child(15) { transform: rotate(210deg); }
+  .wheel .spoke:nth-child(16) { transform: rotate(225deg); }
+  .wheel .spoke:nth-child(17) { transform: rotate(240deg); }
+  .wheel .spoke:nth-child(18) { transform: rotate(255deg); }
+  .wheel .spoke:nth-child(19) { transform: rotate(270deg); }
+  .wheel .spoke:nth-child(20) { transform: rotate(285deg); }
+  .wheel .spoke:nth-child(21) { transform: rotate(300deg); }
+  .wheel .spoke:nth-child(22) { transform: rotate(315deg); }
+  .wheel .spoke:nth-child(23) { transform: rotate(330deg); }
+  .wheel .spoke:nth-child(24) { transform: rotate(345deg); }
