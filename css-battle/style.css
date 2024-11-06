@@ -2,53 +2,54 @@ body {
   display:flex;
   justify-content:center;
   align-items:center;
-  background:#61A74E;
+  background:#0B2429;
   height: 100vh;
 }
-  .flower {
+  .plus-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
   position: relative;
-  width: 50px;
-  height: 50px;
+  width: 150px;
+  height: 150px;
 }
-
-.petal {
+.arm {
+  background-color:#F3AC3C;
   position: absolute;
+}
+.top {
   width: 100px;
-  height: 100px;
-  background-color: #FF69B4;
+  height: 70px;
+  top: -25px;
+}
+
+.right {
+  width: 100px;
+  height: 70px;
+  right: -55px;
+  z-index:2;
+}
+
+.bottom {
+  width: 100px;
+  height: 70px;
+  bottom: -25px;
+  z-index:2;
+}
+.left {
+  width: 100px;
+  height: 70px;
+  left: -55px;
+}
+.center-circle {
+  width: 70px;
+  height: 70px;
+  background-color: #998235;
   border-radius: 50%;
-}
-
-/* Position each petal to create a four-petal shape */
-.petal1 {
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-}
-.petal2 {
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-}
-.petal3 {
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-}
-.petal4 {
-  top: 50%;
-  right: 0;
-  transform: translateY(-50%);
-}
-
-/* Center part of the flower */
-.center {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 30px;
-  height: 30px;
-  background-color: yellow;
-  border-radius: 50%;
   transform: translate(-50%, -50%);
+  z-index:1;
 }
