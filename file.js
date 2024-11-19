@@ -1,15 +1,17 @@
 
+
 <div id="c">
   <div class="c1 top"></div>
   <div class="c2 top"></div>
   <div class="r1"></div>
 </div>
 <style>
-  body {
-    justify-items:center;
-    align-content:center;
-    background:#E0E7FF;
-  }
+<div id="c">
+  <div class="c1 top"></div>
+  <div class="c2 top"></div>
+  <div class="r1"></div>
+</div>    
+ 
   #c{
     display:flex;
   }
