@@ -1,28 +1,23 @@
 body {
-  background: #E8AD6D;
+  background: #998235;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  margin: 0px;
 }
-.line {
-  width: 60px;
-  background: #7E6293;
-  border-radius: 999px;
+#container {
+  display: flex;
+  transform: rotate(45deg);
+  margin-top:50px
 }
-#l1 {
-  height: 240px;
-  margin-left: -100px;
+#box {
+  width: 71px;
+  height: 140px;
+  background: #0B2429;
 }
-#l2 {
-  height: 146px;
-  position: absolute;
-  margin: -180px 0 0 10px;
-}
-#l3 {
-  height: 80px;
-  position: absolute;
-}
-.rotate {
-  transform: rotate(90deg);
+#yellow {
+  width: 68px;
+  height: 69px;
+  background: #FCBE5C;
 }
