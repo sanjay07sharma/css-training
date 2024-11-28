@@ -1,23 +1,12 @@
-body {
-  background: #998235;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0px;
-}
-#container {
-  display: flex;
-  transform: rotate(45deg);
-  margin-top:50px
-}
-#box {
-  width: 71px;
-  height: 140px;
-  background: #0B2429;
-}
-#yellow {
-  width: 68px;
-  height: 69px;
-  background: #FCBE5C;
+.circle {
+  width: 200px;
+  height: 200px;
+  background: conic-gradient(
+    red 0% 25%,
+    blue 25% 50%,
+    green 50% 75%,
+    yellow 75% 100%
+  );
+  border-radius: 50%;
+  display: inline-block;
 }
