@@ -1,12 +1,60 @@
-.circle {
+body {
+  background: #35312F;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  position: relative;
   width: 200px;
   height: 200px;
-  background: conic-gradient(
-    red 0% 25%,
-    blue 25% 50%,
-    green 50% 75%,
-    yellow 75% 100%
-  );
-  border-radius: 50%;
-  display: inline-block;
+}
+
+.horizontal, .vertical {
+  background: #F3AC3C;
+  position: absolute;
+}
+
+.horizontal {
+  width: 200px;
+  height: 55px;
+  top: 73px;
+  left: 0;
+}
+
+.vertical {
+  width: 54px;
+  height: 200px;
+  top: 0;
+  left: 73px;
+}
+
+.square {
+  width: 55px;
+  height: 55px;
+  background: #F3AC3C;
+  position: absolute;
+}
+
+.top-left {
+  top: px;
+  left: 1px;
+}
+
+.top-right {
+  top: 1px;
+  right: 1px;
+}
+
+.bottom-left {
+  bottom: 1px;
+  left: 1px;
+}
+
+.bottom-right {
+  bottom: 1px;
+  right: 1px;
 }
