@@ -1,60 +1,15 @@
 body {
-  background: #35312F;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   margin: 0;
+  background-color: #f0f8ff;
 }
-
-.container {
+.umbrella {
   position: relative;
-  width: 200px;
-  height: 200px;
-}
-
-.horizontal, .vertical {
-  background: #F3AC3C;
-  position: absolute;
-}
-
-.horizontal {
-  width: 200px;
-  height: 55px;
-  top: 73px;
-  left: 0;
-}
-
-.vertical {
-  width: 54px;
-  height: 200px;
-  top: 0;
-  left: 73px;
-}
-
-.square {
-  width: 55px;
-  height: 55px;
-  background: #F3AC3C;
-  position: absolute;
-}
-
-.top-left {
-  top: px;
-  left: 1px;
-}
-
-.top-right {
-  top: 1px;
-  right: 1px;
-}
-
-.bottom-left {
-  bottom: 1px;
-  left: 1px;
-}
-
-.bottom-right {
-  bottom: 1px;
-  right: 1px;
+  width: 150px;
+  height: 75px;
+  background: linear-gradient(to right, red, orange, yell ow, green, blue, indigo, violet);
+  border-radius: 75px 75px 0 0;
 }
