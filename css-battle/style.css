@@ -1,15 +1,28 @@
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
-  background-color: #f0f8ff;
+body{
+  background:#F5D6B4;
+  justify-items:center;
+  align-content:center;
+  height:100vh
 }
-.umbrella {
-  position: relative;
+#main {
   width: 150px;
-  height: 75px;
-  background: linear-gradient(to right, red, orange, yell ow, green, blue, indigo, violet);
-  border-radius: 75px 75px 0 0;
+  height: 150px;
+  background:#D86F45;
+  display:flex;
+  margin-top:-15px
+}
+#h,#v {
+  width: 50px;
+  height: 250px;
+  background:#D86F45;
+  margin-top:-50px
+}
+#v{
+  transform:rotate(90deg);
+  position:absolute;
+  margin-left:50px;
+  margin-top:-50px
+}
+#h{
+  margin-left:50px;
 }
