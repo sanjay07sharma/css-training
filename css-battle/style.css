@@ -1,28 +1,44 @@
-body{
-  background:#F5D6B4;
-  justify-items:center;
-  align-content:center;
-  height:100vh
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+  margin: 0;
 }
-#main {
-  width: 150px;
-  height: 150px;
-  background:#D86F45;
-  display:flex;
-  margin-top:-15px
+
+.phone-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-#h,#v {
-  width: 50px;
-  height: 250px;
-  background:#D86F45;
-  margin-top:-50px
+
+.phone-body {
+  width: 100px;
+  height: 180px;
+  background-color: #2c3e50;
+  border-radius: 20px;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-#v{
-  transform:rotate(90deg);
-  position:absolute;
-  margin-left:50px;
-  margin-top:-50px
+
+.screen {
+  width: 80px;
+  height: 140px;
+  background-color: #ecf0f1;
+  border-radius: 10px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
 }
-#h{
-  margin-left:50px;
+
+.button {
+  width: 20px;
+  height: 5px;
+  background-color: #bdc3c7;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
 }
