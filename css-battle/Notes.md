@@ -120,3 +120,14 @@ background: linear-gradient(direction, color1, color2, ...);
 
 ### Tools for Gradient Creation
 - Online tools like **CSS Gradient Generator** can help you design gradients visually and generate the required CSS code.
+
+
+### Box-Shadow
+
+This CSS rule defines a box-shadow property for an element. Here's a breakdown of the values:
+
+0: This is the horizontal offset of the shadow. A value of 0 means the shadow is directly below the element, with no horizontal shift.
+4px: This is the vertical offset of the shadow. A value of 4px means the shadow is shifted 4 pixels down from the element.
+8px: This is the blur radius. A value of 8px means the shadow will be blurred by 8 pixels, creating a softer edge.
+rgba(0, 0, 0, 0.2): This defines the color of the shadow using the RGBA color model. rgba stands for red, green, blue, and alpha (opacity). In this case, the shadow is black (0, 0, 0) with 20% opacity (0.2).
+Overall, this box-shadow creates a subtle shadow effect below the element, giving it a slightly elevated appearance.
