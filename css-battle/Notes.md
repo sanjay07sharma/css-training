@@ -124,10 +124,44 @@ background: linear-gradient(direction, color1, color2, ...);
 
 ### Box-Shadow
 
+
 This CSS rule defines a box-shadow property for an element. Here's a breakdown of the values:
+
+`box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);`
 
 0: This is the horizontal offset of the shadow. A value of 0 means the shadow is directly below the element, with no horizontal shift.
 4px: This is the vertical offset of the shadow. A value of 4px means the shadow is shifted 4 pixels down from the element.
 8px: This is the blur radius. A value of 8px means the shadow will be blurred by 8 pixels, creating a softer edge.
 rgba(0, 0, 0, 0.2): This defines the color of the shadow using the RGBA color model. rgba stands for red, green, blue, and alpha (opacity). In this case, the shadow is black (0, 0, 0) with 20% opacity (0.2).
 Overall, this box-shadow creates a subtle shadow effect below the element, giving it a slightly elevated appearance.
+
+
+
+
+
+### CSS Radial Gradient
+A radial gradient creates a gradient that radiates out from an origin point.
+
+```radial-gradient(circle at top left, #ff3d3d, #e60000);```
+Breakdown of the Code
+radial-gradient: This is the CSS function used to create a radial gradient.
+
+circle: This specifies the shape of the gradient. In this case, it is a circle. Other possible values include ellipse.
+
+at top left: This defines the position of the gradient's center. Here, it is positioned at the top-left corner of the element. You can also use other positions like center, bottom right, or specific coordinates (e.g., 50% 50%).
+
+#ff3d3d: This is the starting color of the gradient. It is a shade of red.
+
+#e60000: This is the ending color of the gradient. It is a darker shade of red.
+
+Example Usage
+You can apply this gradient to an element's background like this:
+
+This will create a circular gradient that starts with #ff3d3d at the top-left corner and transitions to #e60000 as it moves outward.
+
+Key Points
+Radial gradients radiate from a central point.
+Shape can be circle or ellipse.
+Position can be specified using keywords or coordinates.
+Colors define the gradient transition.
+This should help you understand and use radial gradients in your CSS!
