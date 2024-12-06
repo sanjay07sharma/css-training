@@ -2,38 +2,45 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  height: 100vh;
   margin: 0;
-  background-color: #f7f7f7;
+  background-color: #f4f4f4;
 }
 
-.apple {
-  position: relative;
-  width: 150px;
-  height: 150px;
-  background: radial-gradient(circle at top left, #ff3d3d, #e60000);
-  border-radius: 50%;
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+.sword {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.stem {
-  position: absolute;
-  top: -20px;
-  left: 50%;
+.blade {
   width: 10px;
-  height: 40px;
-  background-color: #8b5a2b;
-  transform: translateX(-50%);
+  height: 200px;
+  background: linear-gradient(to bottom, #e0e0e0, #b0b0b0);
+  border: 2px solid #888;
+  border-bottom: none;
+}
+
+.guard {
+  width: 60px;
+  height: 10px;
+  background: #555;
+  border: 2px solid #333;
+}
+
+.handle {
+  width: 15px;
+  height: 60px;
+  background: #8b4513;
+  border: 2px solid #5a2d0c;
   border-radius: 5px;
 }
 
-.leaf {
-  position: absolute;
-  top: -10px;
-  left: 30%;
-  width: 30px;
-  height: 50px;
-  background: linear-gradient(to bottom, #4caf50, #388e3c);
-  transform: translate(-50%, -50%) rotate(-30deg);
-  border-radius: 50% 50% 0 50%;
+.pommel {
+  width: 20px;
+  height: 20px;
+  background: #555;
+  border: 2px solid #333;
+  border-radius: 50%;
+  margin-top: 5px;
 }
