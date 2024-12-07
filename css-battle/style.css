@@ -4,43 +4,43 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
-  background-color: #f4f4f4;
+  background-color: #f3f3f3;
 }
 
-.sword {
+.instagram-icon {
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+  border-radius: 20%;
+  position: relative;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
-.blade {
-  width: 10px;
-  height: 200px;
-  background: linear-gradient(to bottom, #e0e0e0, #b0b0b0);
-  border: 2px solid #888;
-  border-bottom: none;
-}
-
-.guard {
-  width: 60px;
-  height: 10px;
-  background: #555;
-  border: 2px solid #333;
-}
-
-.handle {
-  width: 15px;
-  height: 60px;
-  background: #8b4513;
-  border: 2px solid #5a2d0c;
-  border-radius: 5px;
-}
-
-.pommel {
-  width: 20px;
-  height: 20px;
-  background: #555;
-  border: 2px solid #333;
+.camera {
+  width: 50%;
+  height: 50%;
+  background-color: white;
   border-radius: 50%;
-  margin-top: 5px;
+  position: absolute;
+}
+
+.lens {
+  width: 25%;
+  height: 25%;
+  background-color: #3e3e3e;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.flash {
+  width: 10%;
+  height: 10%;
+  background-color: #f09433;
+  border-radius: 50%;
+  position: absolute;
+  top: 10%;
+  right: 10%;
 }
