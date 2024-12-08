@@ -4,43 +4,36 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
-  background-color: #f3f3f3;
+  background: linear-gradient(135deg, #f0f8ff, #add8e6);
 }
-
-.instagram-icon {
-  width: 100px;
-  height: 100px;
-  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
-  border-radius: 20%;
+.hat {
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  width: 200px;
+  height: 100px;
+  background: linear-gradient(135deg, #ff7f50, #ff6347);
+  border-radius: 50% 50% 0 0;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
 }
-
-.camera {
-  width: 50%;
-  height: 50%;
-  background-color: white;
-  border-radius: 50%;
+.hat::before {
+  content: '';
   position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 40px;
+  background: linear-gradient(135deg, #ffd700, #ffa500);
+  border-radius: 50%;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
-
-.lens {
-  width: 25%;
-  height: 25%;
-  background-color: #3e3e3e;
-  border-radius: 50%;
+.brim {
   position: absolute;
-}
-
-.flash {
-  width: 10%;
-  height: 10%;
-  background-color: #f09433;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 250px;
+  height: 50px;
+  background: linear-gradient(135deg, #ffa07a, #ff4500);
   border-radius: 50%;
-  position: absolute;
-  top: 10%;
-  right: 10%;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
