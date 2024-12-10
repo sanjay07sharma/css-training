@@ -1,39 +1,37 @@
-body {
+body{
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   margin: 0;
-  background: linear-gradient(135deg, #f0f8ff, #add8e6);
 }
-.hat {
-  position: relative;
-  width: 200px;
-  height: 100px;
-  background: linear-gradient(135deg, #ff7f50, #ff6347);
-  border-radius: 50% 50% 0 0;
-  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
-}
-.hat::before {
-  content: '';
-  position: absolute;
-  top: -20px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 60px;
-  height: 40px;
-  background: linear-gradient(135deg, #ffd700, #ffa500);
-  border-radius: 50%;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-}
-.brim {
-  position: absolute;
-  bottom: -20px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 250px;
+
+.battery {
+  width: 100px;
   height: 50px;
-  background: linear-gradient(135deg, #ffa07a, #ff4500);
-  border-radius: 50%;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  border: 2px solid #000;
+  border-radius: 5px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background: #ddd;
+}
+
+.battery::before {
+  content: '';
+  width: 10px;
+  height: 20px;
+  background: #000;
+  position: absolute;
+  right: -12px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 2px;
+}
+
+.charge {
+  height: 100%;
+  background: #4caf50;
+  transition: width 0.3s ease-in-out;
 }
