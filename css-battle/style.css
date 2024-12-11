@@ -1,37 +1,27 @@
-body{
+/* styles.css */
+body {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   margin: 0;
+  background-color: #f0f0f0;
 }
 
-.battery {
-  width: 100px;
-  height: 50px;
-  border: 2px solid #000;
+.windows-logo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  width: 150px;
+  height: 150px;
+  gap: 10px;
+}
+
+.window-pane {
+  background-color: #0078d7;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.pane-1, .pane-2, .pane-3, .pane-4 {
   border-radius: 5px;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  background: #ddd;
-}
-
-.battery::before {
-  content: '';
-  width: 10px;
-  height: 20px;
-  background: #000;
-  position: absolute;
-  right: -12px;
-  top: 50%;
-  transform: translateY(-50%);
-  border-radius: 2px;
-}
-
-.charge {
-  height: 100%;
-  background: #4caf50;
-  transition: width 0.3s ease-in-out;
 }
