@@ -2,16 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Windows Logo</title>
+    <title>Modern Clock</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="windows-logo">
-        <div class="window-pane pane-1"></div>
-        <div class="window-pane pane-2"></div>
-        <div class="window-pane pane-3"></div>
-        <div class="window-pane pane-4"></div>
+    <div class="clock-container">
+        <div id="digital-clock"></div>
+        <div id="analog-clock">
+            <div id="hour-hand" class="hand"></div>
+            <div id="minute-hand" class="hand"></div>
+            <div id="second-hand" class="hand"></div>
+            <div class="center-dot"></div>
+        </div>
     </div>
+    <div id="c1"></div>
+    <div id="h1"></div>
+    <div id="v1"></div>
+    <script src="script.js"></script>
 </body>
 </html>
