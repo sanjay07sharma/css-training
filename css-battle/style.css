@@ -3,70 +3,64 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f0f0f0;
-    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    gap: 30px;
+    margin: 0;
 }
 
-.clock-container {
+/* Circular Spinner */
+.spinner-circular {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #3498db;
+    border-top: 5px solid #2ecc71;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+/* Pulsing Spinner */
+.spinner-pulse {
+    width: 50px;
+    height: 50px;
+    background-color: #9b59b6;
+    border-radius: 50%;
+    animation: pulse 1.5s ease-in-out infinite;
+}
+
+/* Dot Spinner */
+.spinner-dots {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: white;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    gap: 10px;
 }
 
-#digital-clock {
-    font-size: 48px;
-    margin-bottom: 20px;
-    color: #333;
-}
-
-#analog-clock {
-    width: 250px;
-    height: 250px;
-    border: 10px solid #333;
+.spinner-dots .dot {
+    width: 15px;
+    height: 15px;
+    background-color: #e74c3c;
     border-radius: 50%;
-    position: relative;
+    animation: bounce 0.5s ease-in-out infinite alternate;
 }
 
-.hand {
-    position: absolute;
-    bottom: 50%;
-    left: 50%;
-    transform-origin: bottom;
-    background-color: black;
+.spinner-dots .dot:nth-child(2) {
+    animation-delay: 0.1s;
 }
 
-#hour-hand {
-    width: 6px;
-    height: 80px;
-    margin-left: -3px;
-    background-color: #333;
+.spinner-dots .dot:nth-child(3) {
+    animation-delay: 0.2s;
 }
 
-#minute-hand {
-    width: 4px;
-    height: 120px;
-    margin-left: -2px;
-    background-color: #666;
+/* Animations */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }
 
-#second-hand {
-    width: 2px;
-    height: 140px;
-    margin-left: -1px;
-    background-color: red;
+@keyframes pulse {
+    0%, 100% { transform: scale(0.8); }
+    50% { transform: scale(1.2); }
 }
 
-.center-dot {
-    position: absolute;
-    width: 12px;
-    height: 12px;
-    background-color: black;
-    border-radius: 50%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-15px); }
 }

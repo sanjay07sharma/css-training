@@ -165,3 +165,166 @@ Shape can be circle or ellipse.
 Position can be specified using keywords or coordinates.
 Colors define the gradient transition.
 This should help you understand and use radial gradients in your CSS!
+
+### CSS Animations
+
+CSS animations allow you to create smooth transitions between states in your web elements without requiring JavaScript. They can enhance the user experience by adding visual interest and improving the responsiveness of your website. Here's an in-depth guide to CSS animations:
+
+---
+
+## **1. Basics of CSS Animations**
+
+CSS animations are made up of two key components:
+- **Keyframes**: Define the intermediate steps in the animation.
+- **Animation properties**: Control the behavior of the animation.
+
+### **Keyframes**
+Keyframes specify the styles at various stages of the animation. They are defined using the `@keyframes` rule.
+
+**Syntax**:
+```css
+@keyframes animation-name {
+  0% { property: value; }
+  50% { property: value; }
+  100% { property: value; }
+}
+```
+
+For example:
+```css
+@keyframes slide-in {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+```
+
+### **Animation Properties**
+These properties apply the animation to an element and define its behavior.
+
+- `animation-name`: Specifies the name of the `@keyframes` to use.
+- `animation-duration`: Sets how long the animation takes to complete (e.g., `2s` or `500ms`).
+- `animation-timing-function`: Specifies the speed curve of the animation (e.g., `ease`, `linear`, `ease-in`, `ease-out`, or a custom `cubic-bezier`).
+- `animation-delay`: Defines a delay before the animation starts.
+- `animation-iteration-count`: Specifies the number of times the animation should repeat (`1`, `infinite`, etc.).
+- `animation-direction`: Specifies whether the animation should play forwards, backwards, or alternate (`normal`, `reverse`, `alternate`).
+- `animation-fill-mode`: Determines the style of the element when the animation is not running (`none`, `forwards`, `backwards`, or `both`).
+- `animation-play-state`: Specifies whether the animation is running or paused (`running`, `paused`).
+
+**Example**:
+```css
+div {
+  animation-name: slide-in;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+```
+
+---
+
+## **2. Shorthand Property**
+You can combine all animation properties into the `animation` shorthand property.
+
+**Syntax**:
+```css
+animation: name duration timing-function delay iteration-count direction fill-mode play-state;
+```
+
+**Example**:
+```css
+div {
+  animation: slide-in 2s ease-in-out 0.5s infinite alternate both;
+}
+```
+
+---
+
+## **3. Practical Examples**
+
+### Example 1: Fade In Animation
+```html
+<style>
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .fade-in {
+    animation: fade-in 3s ease-in forwards;
+  }
+</style>
+<div class="fade-in">I will fade in!</div>
+```
+
+### Example 2: Bouncing Ball
+```html
+<style>
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-50px);
+    }
+  }
+  .ball {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    border-radius: 50%;
+    animation: bounce 1s infinite ease-in-out;
+  }
+</style>
+<div class="ball"></div>
+```
+
+---
+
+## **4. Advanced Features**
+
+### Multiple Animations
+You can apply multiple animations by separating them with commas.
+```css
+div {
+  animation: fade-in 2s, slide-in 3s;
+}
+```
+
+### Custom Timing Functions
+Use `cubic-bezier` for custom speed curves.
+```css
+div {
+  animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+}
+```
+
+### Controlling Play State
+You can start, pause, or resume animations dynamically using the `animation-play-state` property or JavaScript.
+```css
+div:hover {
+  animation-play-state: paused;
+}
+```
+
+---
+
+## **5. Performance Considerations**
+
+1. **Hardware Acceleration**: Use transform and opacity for smoother animations as they leverage GPU acceleration.
+2. **Avoid Animating Layout Properties**: Avoid animating properties like `width`, `height`, `margin`, etc., as they can trigger layout recalculations and reduce performance.
+3. **Combine with JavaScript**: For complex animations, CSS can be combined with JavaScript using libraries like GSAP.
+
+---
+
+CSS animations are powerful, lightweight, and straightforward to use. By mastering these techniques, you can create engaging user experiences while maintaining optimal performance.
