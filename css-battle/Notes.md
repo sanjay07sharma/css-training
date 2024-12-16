@@ -415,3 +415,53 @@ ul li:nth-child(2n) {
 ### Conclusion
 
 The `:nth-child()` pseudo-class is a powerful tool for selecting and styling elements based on their position within a parent element. It provides flexibility and precision, making it easier to apply styles to specific elements without adding extra classes or IDs.
+
+
+The CSS animation `shadowPulse 2s cubic-bezier(0.25, 0.1, 0.25, 1) infinite;` defines an effect that creates a pulsating shadow over time. Here's a breakdown:
+
+### 1. **Animation Name: `shadowPulse`**
+   - This refers to the keyframes defined in the CSS that describe how the animation behaves at various stages (e.g., increasing or decreasing shadow intensity).
+
+### 2. **Duration: `2s`**
+   - The animation takes 2 seconds to complete one full cycle of its effect.
+
+### 3. **Timing Function: `cubic-bezier(0.25, 0.1, 0.25, 1)`**
+   - This defines the easing curve for the animation, controlling the speed of the transition over time.
+   - **Cubic Bezier Curve (0.25, 0.1, 0.25, 1):**
+     - Starts off slow.
+     - Gradually accelerates.
+     - Ends with a smooth deceleration.
+
+### 4. **Iteration Count: `infinite`**
+   - The animation repeats indefinitely.
+
+### Example Use Case
+A common scenario for a `shadowPulse` animation might be to draw attention to a button or a UI element by creating a glowing or expanding shadow effect that pulses continuously.
+
+### Example Keyframes
+```css
+@keyframes shadowPulse {
+  0% {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+  }
+  100% {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  }
+}
+```
+
+### Full CSS Example
+```css
+.myElement {
+  animation: shadowPulse 2s cubic-bezier(0.25, 0.1, 0.25, 1) infinite;
+  width: 100px;
+  height: 50px;
+  background-color: #3498db;
+  border-radius: 8px;
+}
+```
+
+This animation will create a smooth pulsating shadow effect for the `myElement`.
