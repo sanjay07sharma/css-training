@@ -1,21 +1,25 @@
 body{
+  justify-content:center;
+  align-items:center;
   height:100vh;
-  justify-items:center;
-  align-content:center;
-  background: #35312F;
-  margin-top:1px
-}
-#c1 {
   display:flex;
-  margin-top: 20px;
-  margin-bottom:20px;
-  gap:20px;
+  background:#3F4869;
 }
-#s1, #s2, #s3, #s4, #s5 {
-  width: 40px;
-  height: 40px;
-  background: #CF81AF;
+.circle {
+  width: 100px;
+  height: 100px;
+  background: #3F4869;
+  border:30px solid;
+  border-radius:100px;
+  border-color:#61A74E;
+  position:absolute;
+  margin-top:-17px;
 }
-#s1, #s5{
-  margin-left:60px;
+#col{
+  width: 30px;
+  height: 81px;
+  background: #61A74E;
+  position:relative;
+  z-index:2;
+  margin-top:-135px;
 }
