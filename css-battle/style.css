@@ -1,34 +1,47 @@
 body {
-  background: #191919;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #121212;
 }
-div {
-  height: 50px;
-  background: #5DBCF9;
+
+.spotify-logo {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    background-color: #1DB954;
+    border-radius: 50%;
 }
-#left {
-  width: 50px;
-  border-radius: 10px 0px 0px 10px;
+
+.arc {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    border: 6px solid white;
+    border-color: white transparent transparent transparent;
+    border-radius: 50%;
 }
-#horn {
-  border-top: 75px solid #191919;
-  border-right: 75px solid #5DBCF9;
-  border-bottom: 75px solid #191919;
-  z-index: 1;
-  box-shadow: 25px 0px #191919;
+
+.arc:nth-child(1) {
+    top: 30px;
+    left: 10px;
+    transform: rotate(15deg);
 }
-#sound {
-  width: 40px;
-  height: 80px;
-  margin: 0px 60px 0px 25px;
-  border-radius: 0px 80px 80px 0px;
-  box-shadow: 0px 0px 0px 10px #5DBCF9, 
-              0px 0px 0px 25px #191919,
-              0px 0px 0px 35px #5DBCF9,
-              0px 0px 0px 50px #191919,
-              0px 0px 0px 60px #5DBCF9;
-  background: #191919;
+
+.arc:nth-child(2) {
+    top: 55px;
+    left: 18px;
+    width: 100px;
+    height: 100px;
+    transform: rotate(15deg);
+}
+
+.arc:nth-child(3) {
+    top: 75px;
+    left: 25px;
+    width: 80px;
+    height: 80px;
+    transform: rotate(15deg);
 }
