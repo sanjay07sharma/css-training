@@ -1,33 +1,54 @@
 body {
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    margin: 0;
-    background-color: #f4f4f4;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #333;
+}
 
-  #o {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    border: 25px, solid;
-  }
+.trash-can {
+  position: relative;
+  width: 80px;
+  height: 100px;
+  border: 4px solid #777;
+  border-radius: 5px;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
-  #d {
-    width:28px;
-    height:80px;
-    background:#7D7D7D;
-    z-index:2;
-    margin-left:-40px;
-    margin-top:-120px
-  }
-  #o.pink {
-    background-color: #ffff;
-    border-color:#7D3C60;
-  }
-  #o.gray {
-    background-color: #ffff;
-    border-color:#7D7D7D;
-  }
+.trash-can::before {
+  content: '';
+  position: absolute;
+  top: -15px;
+  width: 100px;
+  height: 10px;
+  background-color: #777;
+  border-radius: 5px;
+}
+
+.trash-can .lid-handle {
+  position: absolute;
+  top: -25px;
+  width: 30px;
+  height: 10px;
+  background-color: #777;
+  border-radius: 3px;
+}
+
+.line {
+  width: 5px;
+  height: 60%;
+  background-color: #777;
+  margin: 0 5px;
+}
+
+.lines {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
