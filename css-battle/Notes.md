@@ -465,3 +465,47 @@ A common scenario for a `shadowPulse` animation might be to draw attention to a 
 ```
 
 This animation will create a smooth pulsating shadow effect for the `myElement`.
+
+### transform
+
+The `transform` property in CSS is used to apply a 2D or 3D transformation to an element. The `scale` function specifically scales the size of the element. 
+
+### Explanation:
+- `scale(1.5)`: This scales the element to 1.5 times its original size. The argument `1.5` means 150% of the original size.
+
+### Various Arguments for `scale`:
+1. **Uniform Scaling**:
+   - `scale(1.5)`: Scales both the width and height by 1.5 times.
+   - `scale(0.5)`: Scales both the width and height by 0.5 times (50% of the original size).
+
+2. **Non-uniform Scaling**:
+   - `scale(1.5, 2)`: Scales the width by 1.5 times and the height by 2 times.
+   - `scaleX(2)`: Scales the width by 2 times, leaving the height unchanged.
+   - `scaleY(0.5)`: Scales the height by 0.5 times, leaving the width unchanged.
+
+### Example:
+```css
+/* ...existing code... */
+transform: scale(1.5); /* Uniform scaling */
+/* ...existing code... */
+transform: scale(1.5, 2); /* Non-uniform scaling */
+/* ...existing code... */
+transform: scaleX(2); /* Scale width only */
+/* ...existing code... */
+transform: scaleY(0.5); /* Scale height only */
+/* ...existing code... */
+```
+
+### Additional Transform Functions:
+- `rotate(angle)`: Rotates the element by the specified angle.
+- `translate(x, y)`: Moves the element by the specified x and y distances.
+- `skew(x-angle, y-angle)`: Skews the element by the specified angles along the x and y axes.
+
+These transformations can be combined for more complex effects:
+```css
+/* ...existing code... */
+transform: scale(1.5) rotate(45deg) translate(10px, 20px);
+/* ...existing code... */
+```
+
+This example scales the element, rotates it by 45 degrees, and then moves it 10px to the right and 20px down.
