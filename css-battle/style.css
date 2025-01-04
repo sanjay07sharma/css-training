@@ -1,29 +1,23 @@
-body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    background-color: #f3f3f3;
+body{
+  align-items:center;
+  justify-content:center;
+  background:#2F5A76;
+  display:flex;
+  height: 100vh;
 }
-
-.linkedin-icon {
-    width: 50px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    background-color: #0077b5;
-    color: white;
-    font-size: 44px;
-    font-weight: bold;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    font-family: system-ui;
+#center {
+  width: 358px;
+  height: 60px;
+  background: #F3AC3C;
+  position:absolute;
+  z-index:2;
 }
-
-.linkedin-icon:hover {
-    transform: scale(1.5);
+#col {
+  width: 120px;
+  height: 190px;
+  background: #2F5A76;
+  z-index:1;
+  border: 20px solid;
+  position: absolute;
+  border-color:#F3AC3C;
 }
