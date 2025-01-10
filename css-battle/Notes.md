@@ -509,3 +509,53 @@ transform: scale(1.5) rotate(45deg) translate(10px, 20px);
 ```
 
 This example scales the element, rotates it by 45 degrees, and then moves it 10px to the right and 20px down.
+
+ ### grid-template property in the provided CSS:
+
+ ```css 
+ grid-template: 70px 60px 70px / 70px 60px 70px;
+ ```
+
+Explanation
+The grid-template property is a shorthand for defining both grid-template-rows and grid-template-columns in a CSS Grid layout. It specifies the sizes of the rows and columns in the grid.
+
+Breakdown
+Rows: 70px 60px 70px
+
+This part defines the heights of the rows in the grid.
+The grid will have three rows with heights of 70px, 60px, and 70px respectively.
+Columns: 70px 60px 70px
+
+This part defines the widths of the columns in the grid.
+The grid will have three columns with widths of 70px, 60px, and 70px respectively.
+Visual Representation
+The grid will look like this:
+
+70px (width)	60px (width)	70px (width)
+70px (height)	70px (height)	70px (height)
+60px (height)	60px (height)	60px (height)
+70px (height)	70px (height)	70px (height)
+
+Example Usage
+Here is an example of how you might use this in a CSS Grid layout:
+
+```css
+  .container {
+      display: grid;
+      grid-template: 70px 60px 70px / 70px 60px 70px;
+  }
+
+  .item1 {
+      grid-row: 1 / 2;
+      grid-column: 1 / 2;
+  }
+
+  .item2 {
+      grid-row: 2 / 3;
+      grid-column: 2 / 3;
+  }
+
+```
+
+Conclusion
+The grid-template property is a powerful shorthand for defining the structure of a CSS Grid layout. By specifying the sizes of rows and columns, you can create complex and responsive grid layouts with ease.
