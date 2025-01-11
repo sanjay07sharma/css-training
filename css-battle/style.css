@@ -1,22 +1,21 @@
 body {
-    background: #A9C482;
-    display: grid;
-    place-content: center;
-    place-items: center;
-    grid-template: 70px 60px 70px / 70px 60px 70px;
-    height: 100vh;
-  }
-  div {
-    width: 80px;
-    height: 80px;
-    background: #2D696F;
-    border-radius: 50%;
-  }
-  .span3 {
-    grid-column: span 3;
-  }
-  #center {
-    background: #A9C482;
-    z-index: 1;
-    scale: 1.5;
-  }
+  background: #293462;
+  display: grid;
+  place-content: center;
+  height: 100vh;
+}
+#circle {
+  width: 200px;
+  height: 200px;
+  background: #FFF1C1;
+  border-radius: 50%;
+  overflow: hidden;
+}
+div > div {
+  width: 150px;
+  height: 150px;
+  background: #FE5F55;
+  rotate: 45deg;
+  translate: 67px 90px;
+  box-shadow: -30px 129px #FE5F55;
+}
