@@ -517,7 +517,8 @@ This example scales the element, rotates it by 45 degrees, and then moves it 10p
  ```
 
 Explanation
-The grid-template property is a shorthand for defining both grid-template-rows and grid-template-columns in a CSS Grid layout. It specifies the sizes of the rows and columns in the grid.
+### The grid-template property
+is a shorthand for defining both grid-template-rows and grid-template-columns in a CSS Grid layout. It specifies the sizes of the rows and columns in the grid.
 
 Breakdown
 Rows: 70px 60px 70px
@@ -559,3 +560,20 @@ Here is an example of how you might use this in a CSS Grid layout:
 
 Conclusion
 The grid-template property is a powerful shorthand for defining the structure of a CSS Grid layout. By specifying the sizes of rows and columns, you can create complex and responsive grid layouts with ease.
+
+This CSS code is used to define the layout of a grid container. Let's break down each property:
+
+1. **`grid-template: 60px 60px 60px / 70px 50px 70px;`**
+   - This property defines the size of the rows and columns in the grid.
+   - `60px 60px 60px` specifies that there are three rows, each 60 pixels tall.
+   - `70px 50px 70px` specifies that there are three columns, with widths of 70 pixels, 50 pixels, and 70 pixels respectively.
+
+2. **`place-content: center;`**
+   - This property aligns the entire grid within the container.
+   - `center` means that the grid is centered both horizontally and vertically within the container.
+
+3. **`place-items: center;`**
+   - This property aligns the items within each grid cell.
+   - `center` means that each item is centered both horizontally and vertically within its grid cell.
+
+Overall, this code sets up a 3x3 grid with specific row and column sizes, and centers both the grid itself and the items within each cell.
