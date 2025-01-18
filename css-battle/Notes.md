@@ -577,3 +577,17 @@ This CSS code is used to define the layout of a grid container. Let's break down
    - `center` means that each item is centered both horizontally and vertically within its grid cell.
 
 Overall, this code sets up a 3x3 grid with specific row and column sizes, and centers both the grid itself and the items within each cell.
+
+
+### :nth-of-type(even):
+
+This pseudo-class selects every even child element of its parent. In your code, it applies a background color of #F3AC3C to every even div element.
+border-radius:
+
+This property is used to create rounded corners for elements. It can accept one to four values, which define the radius for the top-left, top-right, bottom-right, and bottom-left corners, respectively. In your code:
+div:nth-of-type(2), div:nth-of-type(3) have their top corners rounded.
+div:nth-of-type(5), div:nth-of-type(6) have their bottom corners rounded.
+order:
+
+This property is used in flexbox layouts to control the order in which flex items appear within a flex container. In your code, div:nth-of-type(5) is set to appear in the 8th position within its flex container.
+These properties help in styling and positioning elements in a visually appealing and structured manner.
