@@ -1,26 +1,36 @@
-body {
-  background: #1A4341;
-  display: grid;
-  place-content: center;
-  grid-template-columns: auto auto auto auto;
-  gap: 20px;
-  height: 100vh;
-}
-div {
-  width: 50px;
-  height: 50px;
-  background: #998235;
-  border-radius: 50%;
-}
-div:nth-of-type(even) {
-  background: #F3AC3C;
-}
-div:nth-of-type(2), div:nth-of-type(3) {
-  border-radius: 50% 50% 0px 0px;
-}
-div:nth-of-type(5), div:nth-of-type(6) {
-  border-radius: 0px 0px 50% 50%;
-}
-div:nth-of-type(5) {
-  order: 8;
-}
+  body {
+    background: #6592CF;
+    align-content: center;
+  }
+  body, #bottom {
+    display: grid;
+    justify-items: center;
+  }
+  div {
+    width: 150px;
+    height: 100px;
+    background: #243D83;
+  }
+  #roof {
+    width: 200px;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  }
+  #bottom {
+    border-radius: 0px 0px 10px 10px;
+    align-content: space-between;
+  }
+  p {
+    background: #EEB850;
+    margin: 0px;
+  }
+  #window {
+    width: 100px;
+    height: 10px;
+    border-radius: 5px;
+    translate: 0px -5px;
+  }
+  #door {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px 10px 0px 0px;
+  }
