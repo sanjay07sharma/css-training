@@ -1,13 +1,28 @@
-body{
-  background:#E0E7FF;
-  justify-items:center;
-  align-content:center;
-  height: 100vh;
+body, html {
+  background:#AC342E;
+  height: 500px;
+  width: 500px;
 }
-div {
-  width: 80px;
-  height: 140px;
-  background: #dd6b4d;
-  background: linear-gradient(to bottom, #328FC1 50%, #2D3464 50%);
-  border-radius: 90%;
+#l1, #l2, #l3 {
+  width: 400px;
+  height: 30px;
+  background: #FFFFFF;
+  border: 60px, solid;
+  border-color:#AC342E;
+  margin-left:-60px
+}
+#l3{
+  transform:rotate(90deg);
+  position:absolute;
+  margin-top:-200px;
+  z-index:1;
+}
+#l4{
+  width: 160px;
+  height: 30px;
+  background: #FFFFFF;
+  position:absolute;
+  top:45%;
+  right:120px;
+  z-index:2;
 }
