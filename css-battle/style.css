@@ -1,27 +1,22 @@
 body {
-  background: #293462;
-  height: 100vh;
-}
-
-body, #outer {
+  background: #007065;
   display: grid;
   place-content: center;
+  height: 100vh;
 }
-
-#outer {
-  width: 200px;
-  height: 100px;
-  background: #FE5F55;
-  box-shadow: 0px 20px #A64942;
-  translate: 0px -10px;
-}
-
 div {
-  border-radius: 20px;
+  border-right: 125px solid transparent;
+  border-left: 125px solid transparent;
 }
-
-#inside {
-  width: 140px;
-  height: 40px;
-  background: #A64942;
+#top {
+  border-bottom: 100px solid #FFEECF;
+  translate: 0px 50px;
+}
+#mid {
+  border-bottom: 100px solid #F5C181;
+}
+#bottom {
+  border-bottom: 100px solid #00A79D;
+  translate: 0px -50px;
+  z-index: -1;
 }
