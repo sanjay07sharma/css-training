@@ -1,21 +1,26 @@
   body {
+    margin: 0;
     background: #6592CF;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
   }
-  div {
-    width: 70px;
-    height: 242px;
-    box-sizing: border-box;
-    border: 30px solid #243D83;
-    border-left: 0;
-    border-top-right-radius: 100px;
-    border-bottom-right-radius: 100px;
-    margin-top: 2px;
+  div { position: absolute }
+  .square1 {
+    width: 250px;
+    height: 250px;
+    background: #243D83;
   }
-  div:nth-child(2) {
-    transform: scaleX(-1);
-    margin-left: -30px;
+  .square2 {
+    width: 150px;
+    height: 150px;
+    background: #6592CF;
+    transform: rotate(15deg);
+  }
+  .square3 {
+    width: 75px;
+    height: 75px;
+    background: #243D83;
+    transform: rotate(30deg);
   }
