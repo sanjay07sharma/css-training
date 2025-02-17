@@ -1,26 +1,44 @@
+
   body {
-    margin: 0;
-    background: #6592CF;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f5f5f5;
   }
-  div { position: absolute }
-  .square1 {
-    width: 250px;
-    height: 250px;
-    background: #243D83;
+  .pendrive {
+      width: 200px;
+      height: 80px;
+      background-color: #333;
+      border-radius: 10px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
   }
-  .square2 {
-    width: 150px;
-    height: 150px;
-    background: #6592CF;
-    transform: rotate(15deg);
+  .pendrive::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: -40px;
+      width: 40px;
+      height: 40px;
+      background-color: silver;
+      transform: translateY(-50%);
+      border-radius: 5px;
   }
-  .square3 {
-    width: 75px;
-    height: 75px;
-    background: #243D83;
-    transform: rotate(30deg);
+  .pendrive .connector {
+      position: absolute;
+      top: 50%;
+      left: -30px;
+      width: 20px;
+      height: 20px;
+      background-color: #222;
+      transform: translateY(-50%);
+      border-radius: 3px;
+  }
+  .pendrive .label {
+      font-size: 14px;
+      color: white;
+      font-weight: bold;
   }
