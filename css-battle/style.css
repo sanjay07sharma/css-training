@@ -1,44 +1,39 @@
-
-  body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      background-color: #f5f5f5;
-  }
-  .pendrive {
-      width: 200px;
-      height: 80px;
-      background-color: #333;
-      border-radius: 10px;
-      position: relative;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-  }
-  .pendrive::before {
-      content: "";
-      position: absolute;
-      top: 50%;
-      left: -40px;
-      width: 40px;
-      height: 40px;
-      background-color: silver;
-      transform: translateY(-50%);
-      border-radius: 5px;
-  }
-  .pendrive .connector {
-      position: absolute;
-      top: 50%;
-      left: -30px;
-      width: 20px;
-      height: 20px;
-      background-color: #222;
-      transform: translateY(-50%);
-      border-radius: 3px;
-  }
-  .pendrive .label {
-      font-size: 14px;
-      color: white;
-      font-weight: bold;
-  }
+body {
+  background: #62306D;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.wrapper {
+  display: flex;
+  position: relative;
+}
+.s-left {
+  width: 140px;
+  height: 100px;
+  background: #F7EC7D;
+}
+.s-right {
+  width: 60px;
+  height: 100px;
+  background: #E38F66;
+}
+.circle, .circle-sm {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #62306D;
+  position: absolute;
+}
+.circle-sm {
+  width: 20px;
+  height: 20px;
+  right: 50px;
+}
+.left { left: -20px; }
+.top { top: -20px; }
+.right { right: -20px; }
+.bottom { bottom: -20px; }
+.top-sm { top: -10px; }
+.bottom-sm { bottom: -10px; }
